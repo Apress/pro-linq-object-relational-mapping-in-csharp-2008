@@ -1,0 +1,15 @@
+C:\Documents and Settings\Administrator\Desktop\BoP\BasicSample.Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\BoP\BoP.Core\bin\Debug\BoP.map
+C:\Documents and Settings\Administrator\Desktop\BoP\BoP.Core\bin\Debug\BoP.Core.dll.config
+C:\Documents and Settings\Administrator\Desktop\BoP\BoP.Core\bin\Debug\BoP.Core.dll
+C:\Documents and Settings\Administrator\Desktop\BoP\BoP.Core\bin\Debug\BoP.Core.pdb
+C:\Documents and Settings\Administrator\Desktop\BoP\BoP.Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\BoP\BoP.Core\obj\Debug\BoP.Core.dll
+C:\Documents and Settings\Administrator\Desktop\BoP\BoP.Core\obj\Debug\BoP.Core.pdb
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BoP.Core\bin\Debug\BoP.map
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BoP.Core\bin\Debug\BoP.Core.dll.config
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BoP.Core\bin\Debug\BoP.Core.dll
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BoP.Core\bin\Debug\BoP.Core.pdb
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BoP.Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BoP.Core\obj\Debug\BoP.Core.dll
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BoP.Core\obj\Debug\BoP.Core.pdb

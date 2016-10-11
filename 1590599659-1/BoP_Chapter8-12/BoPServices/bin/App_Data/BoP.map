@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="BoP" Provider="System.Data.Linq.SqlClient.Sql2005Provider" xmlns="http://schemas.microsoft.com/linqtosql/mapping/2007">
+  <Table Name="Accounts" Member="Accounts">
+    <!--Type Name="BoP.Core.BaseEntity2"-->
+      <Type Name="BoP.Core.Domain.Account" InheritanceCode="0">
+        <Column Name="AccountNumber" Member="ID" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="Balance" Member="Balance" DbType="Money"/>
+        <Column Name="StakeHolderId" Member="StakeHolderId" DbType="Int" />
+        <Association Name="FK_Accounts_StakeHolders" Member="StakeHolders" ThisKey="StakeHolderId" OtherKey="StakeHolderId" IsForeignKey="true" />
+      <Column Name="AccountType" Member="AccountType" DbType="Int" IsDiscriminator="true" />
+         <Type Name="BoP.Core.Domain.LoanApplication" InheritanceCode="1" IsInheritanceDefault="True">
+            <Column Name="RequestedAmount" Member="RequestedAmount" DbType="NVarChar(50) NOT NULL" />
+            <Column Name="LoanPurpose" Member="LoanPurpose" DbType="NVarChar(MAX)"/>
+            <Column Name="Approved" Member="Approved" DbType="Char(1) NOT NULL"/>
+            <Column Name="CreditScore" Member="CreditScore" DbType="Int"/>
+            <Type Name="BoP.Core.Domain.Loan" InheritanceCode="2">
+              <Column Name="LoanInterestRate" Member="InterestRate" DbType="Decimal(18,0)" />
+              <Column Name="LoanTermMonths" Member="Term" DbType="Int"/>
+              <Column Name="LoanPrincipal" Member="Principal" DbType="Money"/>
+            </Type>
+         </Type>
+      </Type>
+    <!--/Type-->
+  </Table>
+    <Table Name="Roles" Member="Roles" >
+      <Type Name="BoP.Core.Domain.Role">
+        <Column Name="RoleType" Member="RoleType" DbType="Int NOT NULL" IsDiscriminator="true" />
+        <Column Name="StakeHolderId" Member="StakeHolderId" DbType="Int NOT NULL" IsPrimaryKey="true" />
+        <Association Name="FK_Roles_StakeHolders" Member="StakeHolders" ThisKey="StakeHolderId" OtherKey="StakeHolderId"  DeleteOnNull="true" IsForeignKey="true" />
+        <Type Name="BoP.Core.Domain.User" InheritanceCode="0" IsInheritanceDefault="True">
+          <Column Name="UserId" Member="UserId" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+          <Column Name="Password" Member="Password" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+          <Column Name="Active" Member="Active" DbType="Char(1) NOT NULL" CanBeNull="false" />
+        </Type>
+      </Type>
+    </Table>
+    <Table Name="StakeHolders" Member="StakeHolders">
+      <Type Name="BoP.Core.Domain.StakeHolder">
+        <Column Name="StakeHolderType" Member="StakeHolderType" DbType="Int NOT NULL" IsDiscriminator="true" UpdateCheck="Never"/>
+        <Column Name="StakeHolderId" Member="StakeHolderId" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert"/>
+		<Column Name="Timestamp" Member="Timestamp" DbType="rowversion NOT NULL" CanBeNull="False" IsDbGenerated="true" IsVersion="true" />
+        <Association Name="FK_Roles_StakeHolders" Member="Roles" ThisKey="StakeHolderId" OtherKey="StakeHolderId" DeleteRule="CASCADE" IsUnique="true" />
+        <Type Name="BoP.Core.Domain.Person" InheritanceCode="0" IsInheritanceDefault="True">
+          <Column Name="FirstName" Member="FirstName" DbType="NVarChar(50)" CanBeNull="True"/>
+          <Column Name="LastName" Member="LastName" DbType="NVarChar(50)" CanBeNull="True"/>
+          <Column Name="Gender" Member="Gender" DbType="Char(1)" CanBeNull="True" UpdateCheck="Never"/>
+          <Column Name="DOB" Member="DOB" DbType="DateTime" UpdateCheck="Never"/>
+          <Column Name="Email" Member="Email" DbType="NVarChar(100) NOT NULL" CanBeNull="True" UpdateCheck="Never"/>
+          <Column Name="TaxId" Member="TaxId" DbType="NVarChar(50)" CanBeNull="True" UpdateCheck="Never"/>
+          <Association Name="FK_Accounts_StakeHolders" Member="StakeHolders" ThisKey="StakeHolderId" OtherKey="StakeHolderId" DeleteRule="CASCADE" />
+        </Type>  
+      </Type>
+    </Table>
+</Database>

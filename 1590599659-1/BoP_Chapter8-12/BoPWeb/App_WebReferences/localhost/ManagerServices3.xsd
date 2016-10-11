@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4035/ManagerServices.svc?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/BoP.Core.Domain" />
+  <xs:element name="GetPersonByTaxId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="taxId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonByTaxIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BoP.Core.Domain" minOccurs="0" name="GetPersonByTaxIdResult" nillable="true" type="q1:Person" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePerson">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BoP.Core.Domain" minOccurs="0" name="newP" nillable="true" type="q2:Person" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BoP.Core.Domain" minOccurs="0" name="oldP" nillable="true" type="q3:Person" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePersonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/BoP.Core.Domain" minOccurs="0" name="UpdatePersonResult" nillable="true" type="q4:Person" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

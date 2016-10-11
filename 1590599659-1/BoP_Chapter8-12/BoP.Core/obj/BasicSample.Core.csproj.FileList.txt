@@ -1,0 +1,10 @@
+bin\Debug\BasicSample.Core.dll
+bin\Debug\BasicSample.Core.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\BasicSample.Core.Domain.Supplier.hbm.xml
+obj\Debug\BasicSample.Core.Domain.Product.hbm.xml
+obj\Debug\BasicSample.Core.Domain.HistoricalOrderSummary.hbm.xml
+obj\Debug\BasicSample.Core.Domain.Order.hbm.xml
+obj\Debug\BasicSample.Core.Domain.Customer.hbm.xml
+obj\Debug\BasicSample.Core.dll
+obj\Debug\BasicSample.Core.pdb

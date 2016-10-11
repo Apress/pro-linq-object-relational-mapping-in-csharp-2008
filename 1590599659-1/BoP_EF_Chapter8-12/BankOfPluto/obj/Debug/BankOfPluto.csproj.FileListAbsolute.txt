@@ -1,0 +1,11 @@
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BankOfPluto\bin\BoP.map
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BankOfPluto\bin\BankOfPluto.dll
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BankOfPluto\bin\BankOfPluto.pdb
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BankOfPluto\bin\BoP.Core.dll
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BankOfPluto\bin\MVCToolkit.dll
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BankOfPluto\bin\System.Data.Entity.dll
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BankOfPluto\bin\MVCToolkit.pdb
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BankOfPluto\bin\BoP.Core.pdb
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BankOfPluto\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BankOfPluto\obj\Debug\BankOfPluto.dll
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP_EF\BankOfPluto\obj\Debug\BankOfPluto.pdb

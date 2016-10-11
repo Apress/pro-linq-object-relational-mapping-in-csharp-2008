@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="51534d1d-10a1-4513-acfb-fb7664dc71c0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2147/ManagerServices.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ManagerServices.disco" MetadataType="Disco" ID="80e8eb06-6b9b-4c8d-b7ea-4a1ce1a10017" SourceId="1" SourceUrl="http://localhost:2147/ManagerServices.svc?disco" />
+    <MetadataFile FileName="ManagerServices4.xsd" MetadataType="Schema" ID="10578951-49c4-486d-a303-951d661fb344" SourceId="1" SourceUrl="http://localhost:2147/ManagerServices.svc?xsd=xsd4" />
+    <MetadataFile FileName="ManagerServices3.xsd" MetadataType="Schema" ID="e9d1944d-089e-42aa-9d2d-95dd50b8fcb9" SourceId="1" SourceUrl="http://localhost:2147/ManagerServices.svc?xsd=xsd1" />
+    <MetadataFile FileName="ManagerServices2.xsd" MetadataType="Schema" ID="5a39e13b-5a77-4c59-b2df-50406fdb8328" SourceId="1" SourceUrl="http://localhost:2147/ManagerServices.svc?xsd=xsd3" />
+    <MetadataFile FileName="ManagerServices.xsd" MetadataType="Schema" ID="2f24da74-7ad1-46c0-9375-a169451ac650" SourceId="1" SourceUrl="http://localhost:2147/ManagerServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="ManagerServices1.xsd" MetadataType="Schema" ID="a57357b3-d4d7-4818-bfc2-7f92cc1d00d9" SourceId="1" SourceUrl="http://localhost:2147/ManagerServices.svc?xsd=xsd2" />
+    <MetadataFile FileName="ManagerServices.wsdl" MetadataType="Wsdl" ID="125f7d08-f983-480c-9970-235b13b1e59c" SourceId="1" SourceUrl="http://localhost:2147/ManagerServices.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

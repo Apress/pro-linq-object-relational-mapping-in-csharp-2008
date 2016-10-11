@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="dbo" CdmEntityContainer="BoPObjectContext">
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="IsTypeOf(BoP.Core.Domain.User)">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StakeHolder">
+      <EntityTypeMapping TypeName="IsTypeOf(BoP.Core.Domain.StakeHolder)">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="StakeHolderId" ColumnName="StakeHolderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="BoP.Core.Domain.Person">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="StakeHolderId" ColumnName="StakeHolderId" />
+          <ScalarProperty Name="TaxId" ColumnName="TaxId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="PersonUser" TypeName="BoP.Core.Domain.PersonUser" StoreEntitySet="User">
+      <EndProperty Name="User">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="Person">
+        <ScalarProperty Name="StakeHolderId" ColumnName="StakeHolderId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="StakeHolderAccount" TypeName="BoP.Core.Domain.StakeHolderAccount" StoreEntitySet="Account">
+      <EndProperty Name="Account">
+        <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+      </EndProperty>
+      <EndProperty Name="StakeHolder">
+        <ScalarProperty Name="StakeHolderId" ColumnName="StakeHolderId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="AccountSet">
+      <EntityTypeMapping TypeName="IsTypeOf(BoP.Core.Domain.Account)">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(BoP.Core.Domain.LoanApplication)">
+        <MappingFragment StoreEntitySet="LoanApplication">
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="CreditScore" ColumnName="CreditScore" />
+          <ScalarProperty Name="Approved" ColumnName="Approved" />
+          <ScalarProperty Name="LoanPurpose" ColumnName="LoanPurpose" />
+          <ScalarProperty Name="RequestLoanAmount" ColumnName="RequestLoanAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(BoP.Core.Domain.Loan)">
+        <MappingFragment StoreEntitySet="Loan">
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="Principal" ColumnName="Principal" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="BoP" Provider="System.Data.Linq.SqlClient.Sql2005Provider" xmlns="http://schemas.microsoft.com/linqtosql/mapping/2007">
+  <Table Name="Accounts">
+    <Type Name="BoP.Core.BaseEntity2">
+      <Column Name="AccountNumber" Member="IdT" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />  
+    <Type Name="BoP.Core.Account" InheritanceCode="1">
+      <Column Name="Balance" Member="Balance" DbType="Money"/>
+      <Column Name="AccountType" Member="AccountType" DbType="Int" IsDiscriminator="true" />
+      <Type Name="BoP.Core.Loan" InheritanceCode="1" IsInheritanceDefault="True">
+        <Column Name="LoanInterestRate" Member="InterestRate" DbType="Decimal(18,0)" />
+        <Column Name="LoanTermMonths" Member="Term" DbType="Int"/>
+        <Column Name="LoanPrincipal" Member="Principal" DbType="Money"/>
+      </Type>
+    </Type>
+    </Type>
+  </Table>
+</Database>

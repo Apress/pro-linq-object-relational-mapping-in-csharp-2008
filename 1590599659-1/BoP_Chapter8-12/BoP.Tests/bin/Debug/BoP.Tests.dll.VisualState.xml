@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1006]C:\Documents and Settings\Administrator\Desktop\book_code\BoP\BoP.Tests\bin\Debug\BoP.Tests.dll</TopNode>
+  <SelectedNode>[0-1000]BoP.Tests.UseCaseTests</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1006]C:\Documents and Settings\Administrator\Desktop\book_code\BoP\BoP.Tests\bin\Debug\BoP.Tests.dll" Expanded="true">
+      <Nodes>
+        <Node UniqueName="[0-1007]BoP" Expanded="true">
+          <Nodes>
+            <Node UniqueName="[0-1008]BoP.Tests" Expanded="true">
+              <Nodes>
+                <Node UniqueName="[0-1000]BoP.Tests.UseCaseTests" Expanded="true">
+                  <Nodes>
+                    <Node UniqueName="[0-1002]BoP.Tests.UseCaseTests.AuthenticateUser" />
+                    <Node UniqueName="[0-1003]BoP.Tests.UseCaseTests.CreateLoanApplication" />
+                    <Node UniqueName="[0-1001]BoP.Tests.UseCaseTests.CreateUser" />
+                    <Node UniqueName="[0-1005]BoP.Tests.UseCaseTests.GetLoanAppAndUpdateDisconnected" />
+                    <Node UniqueName="[0-1004]BoP.Tests.UseCaseTests.GetLoanAppsByTaxId" />
+                  </Nodes>
+                </Node>
+              </Nodes>
+            </Node>
+          </Nodes>
+        </Node>
+      </Nodes>
+    </Node>
+  </Nodes>
+</VisualState>

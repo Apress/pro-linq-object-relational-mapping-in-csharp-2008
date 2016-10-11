@@ -1,0 +1,180 @@
+﻿
+body 
+{
+    background: #F9F9F7;
+    font-size:medium;
+    font-family: "trebuchet ms", helvetica, sans-serif;
+    color: #000000;
+}
+
+p
+{
+    margin-bottom: 14px;
+    text-align: justify;
+}
+
+#inner 
+{
+    padding: 13px 30px 13px 30px;
+}
+
+#header
+{
+    position: relative;
+    background: #FF7800;
+    margin-bottom:0px;
+    height: 55px;
+    color: #fff;
+    padding-left: 20px;
+}
+
+#header h1
+{
+    font-weight:normal;
+    font-size: 23px;
+    padding-top:12px;
+}
+
+#menu
+{
+    position: relative;
+    background: #46461F;
+    height: 47px;
+    padding-left:5px;
+}
+
+#menu ul li
+{
+    display: inline;
+    line-height: 52px;
+    padding-left: 3px;
+}
+
+#menu ul li.first
+{
+    border-left: 0px;
+}
+
+#menu ul li a
+{
+    background-color: transparent;
+    padding: 6px 12px 8px 12px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#menu ul li a:hover
+{
+    background: #fff;
+    color: #4A4A24;
+    text-decoration: none;
+}
+
+#maincontent
+{
+    position:relative;
+    padding:10px 3px 10px 3px;
+}
+
+body {	font-family: "Trebuchet MS", Arial, sans-serif;
+    padding-left: 4px;
+    font-size: 80%; 
+}
+
+h1 {color: #718ABE;}
+
+span.allcaps {font-variant:small-caps;}
+
+h2 {
+	color: #000099;
+	font-size: 140%;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+div.Back {position:relative; top:-1.5em;}
+
+span.Back img {
+	border: none;
+	position:relative; 
+	top:.2em; padding-right: .5em; }
+
+span.Back a:link { color: #839CE7; text-decoration: none; }
+
+span.Back a:visited { color: #839CE7; text-decoration: none; top:-.2em; left: .25em; }
+
+span.Back a:hover { color: #000099; text-decoration: underline !important; }
+
+table, th, td {
+	border: 1px solid #D4E0EE;
+	border-collapse: collapse;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	color: #555;
+}
+
+td, th {
+	padding: 4px;
+	line-height: 1.1em;
+}
+
+td.links {
+	color: #4F76A3;
+}
+th {
+	text-align: left;
+	background: #E6EDF5;
+	color: #4F76A3;
+	font-size: 100% !important;
+}
+
+table.gridview { width: 100%;}
+
+table.gridview tr { background: #FCFDFE;  }
+
+table.gridview tr.even { background: #F7F9FC;  }
+
+table a:link	
+{ color: #718ABE; text-decoration: none; }
+
+table a:visited 
+{ color: #718ABE; text-decoration: none; }
+
+table a:hover	
+{ color: #000099; text-decoration: underline !important; }
+
+table.gridview td a:link	
+{ font-size: 90%; }
+
+table.gridview table td		
+{ padding-left: .5em; padding-right: .5em; }
+
+/* the following modify's the details table */
+
+table tr	
+{ background: #FCFDFE; }
+
+/* the following modify's the controls in the list table footer */
+
+tr.Footer td
+{ background: #E6EDF5; height: 1.5em; }
+
+div.PageXofN 
+{display: inline; z-index: 2;   }
+
+div.Results 
+{
+	display: inline; 
+	background: #E6EDF5; 
+	position:absolute; 
+	right: 2%; 
+	padding-top:.1em;  
+	padding-left:1em; 
+	text-align:right; 
+	z-index: 1;  
+	}
+	
+input.errorField { background-color:Yellow }
+textarea.errorField { background-color:Yellow }
+ul.errorSummary { color:Red; font-size:large }
+span.statusMessage { color:Green; font-size:large }

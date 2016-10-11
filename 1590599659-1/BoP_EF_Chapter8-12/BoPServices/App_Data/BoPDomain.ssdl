@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BoP.Core.Domain.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityContainer Name="dbo">
+    <EntitySet Name="Account" EntityType="BoP.Core.Domain.Store.Account" />
+    <EntitySet Name="Loan" EntityType="BoP.Core.Domain.Store.Loan" />
+    <EntitySet Name="LoanApplication" EntityType="BoP.Core.Domain.Store.LoanApplication" />
+    <EntitySet Name="Person" EntityType="BoP.Core.Domain.Store.Person" />
+    <EntitySet Name="User" EntityType="BoP.Core.Domain.Store.User" />
+  </EntityContainer>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="AccountNumber" />
+    </Key>
+    <Property Name="AccountNumber" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Balance" Type="decimal" />
+    <Property Name="StakeHolderId" Type="int" />
+  </EntityType>
+  <EntityType Name="Loan">
+    <Key>
+      <PropertyRef Name="AccountNumber" />
+    </Key>
+    <Property Name="AccountNumber" Type="int" Nullable="false" />
+    <Property Name="InterestRate" Type="decimal" />
+    <Property Name="Principal" Type="money" />
+  </EntityType>
+  <EntityType Name="LoanApplication">
+    <Key>
+      <PropertyRef Name="AccountNumber" />
+    </Key>
+    <Property Name="AccountNumber" Type="int" Nullable="false" />
+    <Property Name="RequestLoanAmount" Type="money" />
+    <Property Name="LoanPurpose" Type="nvarchar(max)" />
+    <Property Name="Approved" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CreditScore" Type="int" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="StakeHolderId" />
+    </Key>
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="char" MaxLength="1" />
+    <Property Name="DOB" Type="datetime" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="TaxId" Type="nvarchar" MaxLength="50" />
+    <Property Name="StakeHolderId" Type="int" Nullable="false" />
+	<Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Active" Type="nchar" MaxLength="10" />
+    <Property Name="StakeHolderId" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BoP.Core.Domain" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BoP.Core.Domain" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:2147/ManagerServices.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+  <xs:complexType name="User">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Role">
+        <xs:sequence>
+          <xs:element name="_active" nillable="true" type="xs:string" />
+          <xs:element name="_password" nillable="true" type="xs:string" />
+          <xs:element name="_userId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User" />
+  <xs:complexType name="Role">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseEntityOfstring">
+        <xs:sequence>
+          <xs:element name="_x003C_Name_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_RoleType_x003E_k__BackingField" type="xs:int" />
+          <xs:element name="_x003C_StakeHolderId_x003E_k__BackingField" type="xs:int" />
+          <xs:element name="_x003C_StakeHolder_x003E_k__BackingField" nillable="true" type="tns:StakeHolder" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Role" nillable="true" type="tns:Role" />
+  <xs:complexType name="BaseEntityOfstring">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/BoP.Core.Domain" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System.Data" minOccurs="0" name="System.Data.Objects.DataClasses.IEntityWithKey.EntityKey" nillable="true" type="q1:EntityKey" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseEntityOfstring" nillable="true" type="tns:BaseEntityOfstring" />
+  <xs:complexType name="StakeHolder">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseEntityOfint">
+        <xs:sequence>
+          <xs:element name="_x003C_Accounts_x003E_k__BackingField" nillable="true" type="tns:ArrayOfAccount" />
+          <xs:element name="_x003C_StakeHolderType_x003E_k__BackingField" type="xs:int" />
+          <xs:element name="roles" nillable="true" type="tns:ArrayOfRole" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StakeHolder" nillable="true" type="tns:StakeHolder" />
+  <xs:complexType name="BaseEntityOfint">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="BaseEntityOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/BoP.Core.Domain" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="int" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/System.Data" minOccurs="0" name="System.Data.Objects.DataClasses.IEntityWithKey.EntityKey" nillable="true" type="q2:EntityKey" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseEntityOfint" nillable="true" type="tns:BaseEntityOfint" />
+  <xs:complexType name="ArrayOfAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Account" nillable="true" type="tns:Account" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAccount" nillable="true" type="tns:ArrayOfAccount" />
+  <xs:complexType name="Account">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseEntityOfint">
+        <xs:sequence>
+          <xs:element name="_balance" type="xs:decimal" />
+          <xs:element name="_person" nillable="true" type="tns:Person" />
+          <xs:element name="_stakeHolder" nillable="true" type="tns:StakeHolder" />
+          <xs:element name="_stakeHolderId" type="xs:int" />
+          <xs:element name="_x003C_AccountType_x003E_k__BackingField" type="tns:AccountType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Account" nillable="true" type="tns:Account" />
+  <xs:complexType name="Person">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StakeHolder">
+        <xs:sequence>
+          <xs:element name="_dob" nillable="true" type="xs:dateTime" />
+          <xs:element name="_email" nillable="true" type="xs:string" />
+          <xs:element name="_firstName" nillable="true" type="xs:string" />
+          <xs:element name="_gender" nillable="true" type="xs:string" />
+          <xs:element name="_lastName" nillable="true" type="xs:string" />
+          <xs:element name="_taxId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Person" nillable="true" type="tns:Person" />
+  <xs:simpleType name="AccountType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Account" />
+      <xs:enumeration value="Loan" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AccountType" nillable="true" type="tns:AccountType" />
+  <xs:complexType name="ArrayOfRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Role" nillable="true" type="tns:Role" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRole" nillable="true" type="tns:ArrayOfRole" />
+</xs:schema>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Documents and Settings\Administrator\Desktop\book_code\BoP\BoP.Tests\bin\Debug\BoP.Tests.dll" total="5" failures="0" not-run="0" date="2008-04-05" time="21:55:10">
+  <environment nunit-version="2.4.3.0" clr-version="2.0.50727.3031" os-version="Microsoft Windows NT 5.2.3790 Service Pack 1" platform="Win32NT" cwd="C:\Documents and Settings\Administrator\Desktop\book_code\BoP\BoP.Tests\bin\Debug" machine-name="DEV-BASE-IMAGE" user="Administrator" user-domain="DEV-BASE-IMAGE" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite name="C:\Documents and Settings\Administrator\Desktop\book_code\BoP\BoP.Tests\bin\Debug\BoP.Tests.dll" success="True" time="19.047" asserts="0">
+    <results>
+      <test-suite name="BoP" success="True" time="19.031" asserts="0">
+        <results>
+          <test-suite name="Tests" success="True" time="19.031" asserts="0">
+            <results>
+              <test-suite name="UseCaseTests" success="True" time="18.984" asserts="0">
+                <results>
+                  <test-case name="BoP.Tests.UseCaseTests.AuthenticateUser" executed="True" success="True" time="11.875" asserts="1" />
+                  <test-case name="BoP.Tests.UseCaseTests.CreateLoanApplication" executed="True" success="True" time="0.422" asserts="1" />
+                  <test-case name="BoP.Tests.UseCaseTests.CreateUser" executed="True" success="True" time="5.984" asserts="1" />
+                  <test-case name="BoP.Tests.UseCaseTests.GetLoanAppAndUpdateDisconnected" executed="True" success="True" time="0.625" asserts="1" />
+                  <test-case name="BoP.Tests.UseCaseTests.GetLoanAppsByTaxId" executed="True" success="True" time="0.031" asserts="1" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

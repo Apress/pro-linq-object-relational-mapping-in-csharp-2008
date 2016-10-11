@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:2147/ManagerServices.svc?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/BoP.Core.Domain" />
+  <xs:complexType name="EntityCollectionOfUseruvsuUO4M">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityCollectionOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="User" Namespace="http://schemas.datacontract.org/2004/07/BoP.Core.Domain" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RelatedEnd">
+        <xs:sequence>
+          <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BoP.Core.Domain" name="_relatedEntities" nillable="true" type="q1:ArrayOfUser" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityCollectionOfUseruvsuUO4M" nillable="true" type="tns:EntityCollectionOfUseruvsuUO4M" />
+  <xs:complexType name="RelatedEnd">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="RelatedEnd" nillable="true" type="tns:RelatedEnd" />
+  <xs:complexType name="EntityCollectionOfAccountuvsuUO4M">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityCollectionOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Account" Namespace="http://schemas.datacontract.org/2004/07/BoP.Core.Domain" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RelatedEnd">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BoP.Core.Domain" name="_relatedEntities" nillable="true" type="q2:ArrayOfAccount" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityCollectionOfAccountuvsuUO4M" nillable="true" type="tns:EntityCollectionOfAccountuvsuUO4M" />
+  <xs:complexType name="RelationshipManager">
+    <xs:sequence>
+      <xs:element name="_owner" nillable="true" type="xs:anyType" />
+      <xs:element name="_relationships" nillable="true" type="tns:ArrayOfRelatedEnd" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RelationshipManager" nillable="true" type="tns:RelationshipManager" />
+  <xs:complexType name="ArrayOfRelatedEnd">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RelatedEnd" nillable="true" type="tns:RelatedEnd" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRelatedEnd" nillable="true" type="tns:ArrayOfRelatedEnd" />
+</xs:schema>

@@ -1,0 +1,106 @@
+<Configuration>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:@System.AttributeTargets">
+      <Item value="Method" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BasicSample.Core.Domain.Supplier">
+      <Item value="products" priority="0" />
+      <Item value="ContactName" priority="0" />
+      <Item value="Products" priority="1" />
+      <Item value="CompanyName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.IQuery">
+      <Item value="List" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NHibernate.Collection">
+      <Item value="PersistentIdentifierBag" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List&lt;BasicSample.Core.Domain.Product&gt;">
+      <Item value="Insert" priority="0" />
+      <Item value="IndexOf" priority="0" />
+      <Item value="CopyTo" priority="0" />
+      <Item value="Contains" priority="0" />
+      <Item value="Remove" priority="0" />
+      <Item value="Count" priority="1" />
+      <Item value="Clear" priority="0" />
+      <Item value="RemoveAt" priority="0" />
+      <Item value="GetEnumerator" priority="2" />
+      <Item value="Add" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ISession">
+      <Item value="Flush" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList&lt;BasicSample.Core.Domain.Product&gt;">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:T">
+      <Item value="Equals" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NHibernate">
+      <Item value="Collection" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.IDataItemContainer">
+      <Item value="DataItem" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BasicSample.Core.Domain.Products">
+      <Item value="Add" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:object">
+      <Item value="GetType" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <EditorManager>
+    <RecentFiles>
+      <File id="AFE7FBBC-9373-4BD1-AB7A-F4C1476979C2/f:ListCustomers.aspx.cs" caret="1027" scrollPosition="0|0" />
+      <File id="FCB45F28-3A4E-4E72-9691-556125CCF227/f:AbstractNHibernateDao.cs" caret="249" scrollPosition="0|0" />
+      <File id="8CF24AF8-714C-4029-8E0E-3BA26C27FA7C/d:DataInterfaces/f:IHistoricalOrderSummaryDao.cs" caret="0" scrollPosition="0|0" />
+      <File id="8CF24AF8-714C-4029-8E0E-3BA26C27FA7C/d:Domain/f:Customer.hbm.xml" caret="573" scrollPosition="0|0" />
+      <File id="8CF24AF8-714C-4029-8E0E-3BA26C27FA7C/d:Domain/f:Supplier.hbm.xml" caret="661" scrollPosition="0|0" />
+      <File id="8CF24AF8-714C-4029-8E0E-3BA26C27FA7C/d:Domain/f:Order.cs" caret="1179" scrollPosition="0|11" />
+      <File id="8CF24AF8-714C-4029-8E0E-3BA26C27FA7C/d:Domain/f:Order.hbm.xml" caret="569" scrollPosition="0|0" />
+      <File id="8CF24AF8-714C-4029-8E0E-3BA26C27FA7C/d:Domain/f:Customer.cs" caret="1991" scrollPosition="0|37" />
+      <File id="8CF24AF8-714C-4029-8E0E-3BA26C27FA7C/d:Domain/f:Product.hbm.xml" caret="371" scrollPosition="0|0" />
+      <File id="8CF24AF8-714C-4029-8E0E-3BA26C27FA7C/d:Domain/f:Product.cs" caret="665" scrollPosition="0|0" />
+      <File id="8CF24AF8-714C-4029-8E0E-3BA26C27FA7C/d:DataInterfaces/f:IDaoFactory.cs" caret="0" scrollPosition="0|0" />
+      <File id="FCB45F28-3A4E-4E72-9691-556125CCF227/f:NHibernateDaoFactory.cs" caret="679" scrollPosition="0|1" />
+      <File id="8CF24AF8-714C-4029-8E0E-3BA26C27FA7C/d:Domain/f:Supplier.cs" caret="1700" scrollPosition="0|26" />
+      <File id="8CF24AF8-714C-4029-8E0E-3BA26C27FA7C/d:Domain/f:Products.cs" caret="348" scrollPosition="0|0" />
+      <File id="AFE7FBBC-9373-4BD1-AB7A-F4C1476979C2/f:ListSuppliers.aspx.cs" caret="554" scrollPosition="0|0" />
+      <File id="AFE7FBBC-9373-4BD1-AB7A-F4C1476979C2/f:ListSuppliers.aspx" caret="283" scrollPosition="0|0" />
+      <File id="8CF24AF8-714C-4029-8E0E-3BA26C27FA7C/d:Domain/f:DomainObject.cs" caret="773" scrollPosition="0|4" />
+      <File id="506BD2E6-A534-4C5D-802E-43CFD16A32B4/d:Data/f:CustomerDaoTests.cs" caret="0" scrollPosition="0|0" />
+      <File id="506BD2E6-A534-4C5D-802E-43CFD16A32B4/d:Data/f:HistoricalOrderSummaryDaoTests.cs" caret="0" scrollPosition="0|0" />
+      <File id="506BD2E6-A534-4C5D-802E-43CFD16A32B4/d:Web/f:WebSmokeTests.cs" caret="514" scrollPosition="0|0" />
+      <File id="506BD2E6-A534-4C5D-802E-43CFD16A32B4/d:Domain/f:SupplierTests.cs" caret="0" scrollPosition="0|0" />
+      <File id="506BD2E6-A534-4C5D-802E-43CFD16A32B4/d:Domain/f:OrderTests.cs" caret="373" scrollPosition="0|0" />
+      <File id="506BD2E6-A534-4C5D-802E-43CFD16A32B4/d:Domain/f:DomainObjectIdSetter.cs" caret="883" scrollPosition="0|7" />
+      <File id="506BD2E6-A534-4C5D-802E-43CFD16A32B4/d:Domain/f:CustomerTests.cs" caret="440" scrollPosition="0|99" />
+      <File id="506BD2E6-A534-4C5D-802E-43CFD16A32B4/d:Data/d:DaoTestDoubles/f:OrderDaoStub.cs" caret="374" scrollPosition="0|0" />
+      <File id="506BD2E6-A534-4C5D-802E-43CFD16A32B4/d:Data/d:DaoTestDoubles/f:MockOrderDaoFactory.cs" caret="512" scrollPosition="0|3" />
+      <File id="506BD2E6-A534-4C5D-802E-43CFD16A32B4/d:TestFactories/f:TestOrdersFactory.cs" caret="765" scrollPosition="0|19" />
+      <File id="506BD2E6-A534-4C5D-802E-43CFD16A32B4/f:App.config" caret="717" scrollPosition="0|0" />
+      <File id="AFE7FBBC-9373-4BD1-AB7A-F4C1476979C2/f:Web.config" caret="943" scrollPosition="0|9" />
+      <File id="506BD2E6-A534-4C5D-802E-43CFD16A32B4/f:TestGlobals.cs" caret="1043" scrollPosition="0|6" />
+    </RecentFiles>
+  </EditorManager>
+  <FileStructureView>
+    <AutoScrollToSource>False</AutoScrollToSource>
+    <TrackCaretLocation>False</TrackCaretLocation>
+  </FileStructureView>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <ReFormatCode>
+    <ReorderMembers>False</ReorderMembers>
+    <OptimizeUsings>False</OptimizeUsings>
+    <RemoveRedundantThis>False</RemoveRedundantThis>
+    <ShortenReferences>False</ShortenReferences>
+  </ReFormatCode>
+  <SharedSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </SharedSolutionDisabledTemplatesManager>
+  <UserSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </UserSolutionDisabledTemplatesManager>
+</Configuration>

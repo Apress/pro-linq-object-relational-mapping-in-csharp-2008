@@ -1,0 +1,17 @@
+C:\Documents and Settings\Administrator\Desktop\BoP\BoP.Util\bin\Debug\BoP.Util.dll.config
+C:\Documents and Settings\Administrator\Desktop\BoP\BoP.Util\bin\Debug\BoP.Util.dll
+C:\Documents and Settings\Administrator\Desktop\BoP\BoP.Util\bin\Debug\BoP.Util.pdb
+C:\Documents and Settings\Administrator\Desktop\BoP\BoP.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\BoP\BoP.Util\obj\Debug\BoP.Util.dll
+C:\Documents and Settings\Administrator\Desktop\BoP\BoP.Util\obj\Debug\BoP.Util.pdb
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP\BoP.Util\bin\Debug\BoP.Util.dll.config
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP\BoP.Util\bin\Debug\BoP.Util.dll
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP\BoP.Util\bin\Debug\BoP.Util.pdb
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP\BoP.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP\BoP.Util\obj\Debug\BoP.Util.dll
+C:\Documents and Settings\vmehta\Desktop\book_code\BoP\BoP.Util\obj\Debug\BoP.Util.pdb
+C:\Documents and Settings\Administrator\Desktop\book_code\BoP\BoP.Util\bin\Debug\BoP.Util.dll
+C:\Documents and Settings\Administrator\Desktop\book_code\BoP\BoP.Util\bin\Debug\BoP.Util.pdb
+C:\Documents and Settings\Administrator\Desktop\book_code\BoP\BoP.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\book_code\BoP\BoP.Util\obj\Debug\BoP.Util.dll
+C:\Documents and Settings\Administrator\Desktop\book_code\BoP\BoP.Util\obj\Debug\BoP.Util.pdb
